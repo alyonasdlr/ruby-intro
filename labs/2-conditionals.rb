@@ -16,6 +16,21 @@
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
+#put first dice number
+dice1 = rand(1..6)
+#put second dice number
+dice2 = rand(1..6)
+total = dice1 + dice2
+puts dice1
+puts dice2
+puts "the total is: #{total}"
+if total == 7 || total == 11
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE"
+else
+    puts "THE POINT IS #{total}"
+end    
 # Log output to the screen with puts, e.g.
 # puts "Hello"
 # You can add two strings together, or two numbers, but
